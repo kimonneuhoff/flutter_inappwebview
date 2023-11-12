@@ -37,7 +37,7 @@ public class InAppWebViewSettings: ISettings<InAppWebView> {
     var allowUniversalAccessFromFileURLs = false
     var allowFileAccessFromFileURLs = false
 
-    var disallowOverScroll = false
+    var disallowOverScroll = true
     var enableViewportScale = false
     var suppressesIncrementalRendering = false
     var allowsAirPlayForMediaPlayback = true
