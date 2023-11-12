@@ -421,12 +421,12 @@ public class InAppWebView: WKWebView, UIScrollViewDelegate, WKUIDelegate,
             // prevent webView from bouncing
             if settings.disallowOverScroll || true {
                 if responds(to: #selector(getter: scrollView)) {
-                    scrollView.bounces = NO
+                    scrollView.bounces = false
                 }
                 else {
                     for subview: UIView in subviews {
                         if subview is UIScrollView {
-                            (subview as! UIScrollView).bounces = NO
+                            (subview as! UIScrollView).bounces = false
                         }
                     }
                 }
